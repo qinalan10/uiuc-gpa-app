@@ -71,8 +71,23 @@ def generate_table(dataframe, max_rows=1000):
 
 app.layout = html.Div([
     dcc.Markdown('''
-    # UIUC Course Minimum GPA
-    ### Select a Subject
+    # **UIUC Course Minimum GPA**
+    ** *By Alan Qin* **
+      
+      
+
+    When selecting classes, many students look at the average GPA of the 
+    class to decide whether or not they should take that class. With this project, 
+    students can select what class subject, undergraduate/graduate, and minimum GPA they want for their 
+    course and the resulting plot and data frame will show the courses that match their parameters.
+    This dataset used for this project is from the University of Illinois at Urbana-Champaign (UIUC) and contains grade information 
+    about every course of more than 20 people (*FOIA #2018-150*) from 2010 to 2020. 
+    The data was then accessed through a public [GitHub](https://github.com/wadefagen) repository where it was cleaned by 
+    Prof. Wade-Fagen of The University of Illinois at Urbana-Champaign. 
+    The dataset contains information from 53933 classes/sections from over ten years of classes. 
+
+
+    ##### **Select a Course Subject**
 
     '''),
 
@@ -83,7 +98,7 @@ app.layout = html.Div([
     ),
 
     dcc.Markdown('''
-    ### Select Course Level
+    ##### **Select Course Level**
 
     '''),
 
@@ -95,7 +110,7 @@ app.layout = html.Div([
     )]),
 
     dcc.Markdown('''
-    ### Select Minimum GPA 
+    ##### **Select Minimum GPA**
 
     ''', style={ 'text-align': 'center' }),
 
